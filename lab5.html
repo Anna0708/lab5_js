@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<input type="text" name="type1">
+	<input type="text" name="type2">
+	<button id = "button1" >Button</button>
+<script type="text/javascript">
+	document.getElementById('button1').addEventListener('click',() => { 
+		let input = document.getElementsByTagName('input'); 
+		let obj = { name : input[0].value, surname : input[1].value }; 
+		console.log("Имя: "+ obj.name + " Fамилия: " + obj.surname);
+	}); 
+</script>
+	
+</body>
+</html>
